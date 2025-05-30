@@ -18,7 +18,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.mycompany.sayronarmy.Main</mainClass>
+                  <mainClass>Main</mainClass>
                 </transformer>
               </transformers>
             </configuration>

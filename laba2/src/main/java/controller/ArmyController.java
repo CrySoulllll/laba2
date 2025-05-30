@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.swing.SwingUtilities;
+import java.util.ArrayList;
 
 public class ArmyController {
     private final Map<String, Ork> orks = new HashMap<>();
@@ -77,9 +78,14 @@ public class ArmyController {
     }
 
     public List<Ork> getOrksByTribe(Tribe tribe) {
-        return orks.values().stream()
-                .filter(ork -> ork.getTribe() == tribe)
-                .toList();
+    List<Ork> result = new ArrayList<>();
+    for (Ork ork : orks.values()) {
+        if (ork.getTribe() == tribe) {
+            result.add(ork);
+        }
     }
+    return result;
+}
+
 
 }
