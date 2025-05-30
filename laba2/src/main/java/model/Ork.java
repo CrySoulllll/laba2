@@ -12,9 +12,7 @@ public class Ork {
     private final Tribe tribe;
     private final OrkType type;
 
-    public Ork(String name, String weapon, String armor, String banner, 
-              int strength, int agility, int intelligence, int health,
-              Tribe tribe, OrkType type) {
+    public Ork(String name, String weapon, String armor, String banner, int strength, int agility, int intelligence, int health, Tribe tribe, OrkType type) {
         this.name = name;
         this.weapon = weapon;
         this.armor = armor;
@@ -38,14 +36,11 @@ public class Ork {
     public Tribe getTribe() { return tribe; }
     public OrkType getType() { return type; }
     
-
     @Override
     public String toString() {
     return String.format("Орк [name=%s, tribe=%s, type=%s, strength=%d, agility=%d, intelligence=%d, health=%d, weapon=%s, armor=%s, banner=%s]",
-            name, tribe, type, strength, agility, intelligence, health, 
-            weapon, armor, banner);
+            name, tribe, type, strength, agility, intelligence, health, weapon, armor, banner);
 }
-
     public enum Tribe {
         MORDOR("Мордор"),
         DOL_GULDUR("Дол Гулдур"),

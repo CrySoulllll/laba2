@@ -2,8 +2,8 @@ package model.builders;
 
 import model.Ork;
 
-
 public class DolGuldurOrkBuilder extends OrkBuilder {
+    
     public DolGuldurOrkBuilder() {
         super(Ork.Tribe.DOL_GULDUR);
     }

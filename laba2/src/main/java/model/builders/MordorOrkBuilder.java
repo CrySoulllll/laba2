@@ -3,6 +3,7 @@ package model.builders;
 import model.Ork;
 
 public class MordorOrkBuilder extends OrkBuilder {
+    
     public MordorOrkBuilder() {
         super(Ork.Tribe.MORDOR);
     }

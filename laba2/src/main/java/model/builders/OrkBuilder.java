@@ -64,8 +64,6 @@ public abstract class OrkBuilder {
     }
 
     public Ork build() {
-        return new Ork(name, weapon, armor, banner, 
-                     strength, agility, intelligence, health,
-                     tribe, type);
+        return new Ork(name, weapon, armor, banner, strength, agility, intelligence, health, tribe, type);
     }
 }

@@ -20,7 +20,7 @@ import java.util.Map;
 import javax.swing.SwingUtilities;
 
 public class ArmyController {
-     private final Map<String, Ork> orks = new HashMap<>();
+    private final Map<String, Ork> orks = new HashMap<>();
     private final Map<Tribe, OrkBuilderFactory> builderFactories;
     private final Map<Tribe, OrkGearFactory> gearFactories;
     private MainView view;
